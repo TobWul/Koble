@@ -1,6 +1,6 @@
 from koble.settings.settings import *
 
-DEBUG = False
+DEBUG = True
 
 # HTTPS
 CSRF_COOKIE_SECURE = True
