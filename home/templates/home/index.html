@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
-    <h1>Testing</h1>
+{% include 'components/nav.html' %}
+<div id="landingpage">
+    <section class="landing-screen">
+        <div class="landing-text">
+            <h1>Vi kobler trening med dine<br>behov</h1>
+            <p>Vi kartlegger treningssentre som oppfyller dine behov, slik<br>at du kan fokusere på det som er viktig
+            </p>
+            <a href=""><img src="{% static 'icons/arrow.svg' %}" alt="arrow">Utforsk treningssentre</a>
+        </div>
+        <img id="main-illustration" src="{% static 'illustrations/treningssenter.svg' %}" alt="Treningssenter">
+    </section>
+</div>
 {% endblock %}

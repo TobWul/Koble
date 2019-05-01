@@ -1,0 +1,23 @@
+nav#nav {
+    position: fixed;
+    top: 4rem;
+    right: 5%;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10;
+
+    a {
+      margin-right: 3.5rem;
+    }
+
+    a.login {
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+  }
