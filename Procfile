@@ -1,0 +1,1 @@
+web: gunicorn koble.wsgi_prod
