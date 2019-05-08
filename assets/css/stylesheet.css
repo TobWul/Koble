@@ -83,6 +83,16 @@ p {
     .container {
       max-width: 1200px; } }
 
+img {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
 nav#nav {
   position: fixed;
   top: 4rem;
@@ -92,7 +102,15 @@ nav#nav {
   color: white;
   font-size: 1.5rem;
   z-index: 10;
-  display: flex; }
+  display: flex;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
   nav#nav a {
     margin-right: 3.5rem; }
   nav#nav a#logo {
@@ -258,7 +276,7 @@ nav#nav {
   position: relative;
   height: 400px;
   padding-left: 550px;
-  width: 60%; }
+  width: calc(60ch + 550px); }
   #landingpage .interviews div > img {
     max-width: 500px;
     max-height: 500px;

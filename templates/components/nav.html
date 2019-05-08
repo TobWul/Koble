@@ -6,5 +6,9 @@
     <a to="/">Kontakt oss</a>
     <a to="/">Blogg</a>
     <a to="/">Send inn forslag</a>
+    {% if not request.user.is_authenticated %}
     <a href="{% url 'login' %}" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Logg inn</a>
+    {% else %}
+        <a href="" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Min side</a>
+    {% endif %}
 </nav>

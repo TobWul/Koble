@@ -116,7 +116,7 @@
       position: relative;
       height: 400px;
       padding-left: 550px;
-      width: 60%;
+      width: calc(60ch + 550px);
 
       > img {
         max-width: 500px;
