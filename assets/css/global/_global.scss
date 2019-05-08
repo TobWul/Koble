@@ -1,0 +1,6 @@
+.container {
+  margin: 0 auto;
+  @media screen and (min-width: $md) {
+    max-width: 1200px;
+  }
+}

@@ -1,23 +1,33 @@
 nav#nav {
-    position: fixed;
-    top: 4rem;
-    right: 5%;
-    color: white;
-    font-size: 1.5rem;
-    z-index: 10;
+  position: fixed;
+  top: 4rem;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  z-index: 10;
+  display: flex;
 
-    a {
-      margin-right: 3.5rem;
-    }
+  a {
+    margin-right: 3.5rem;
+  }
 
-    a.login {
-      position: relative;
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-      }
+  a#logo {
+    color: $accent-color;
+    font-weight: 500;
+    margin-right: auto;
+  }
+
+  a.login {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
     }
   }
+}

@@ -1,0 +1,51 @@
+.input-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  input {
+    background: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    outline: 0;
+    font-size: 1rem;
+    box-shadow: 0 0 0 2px $light-gray;
+    color: $light-gray;
+    transition: box-shadow 100ms ease-in-out;
+    width: 100%;
+
+
+    &:hover {
+      box-shadow: 0 0 0 2px $primary-light-color;
+    }
+
+    &:focus, &:not(:placeholder-shown) {
+      border-color: $primary-color;
+      color: $primary-color;
+      box-shadow: 0 0 0 2px $primary-color;
+    }
+
+    + label {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      transition: top 100ms ease-in-out;
+      z-index: -1;
+      font-size: 0.8rem;
+      color: $primary-color;
+
+      i.material-icons {
+        position: relative;
+        font-size: 1rem;
+        top: 2px;
+      }
+    }
+
+    &:not(:placeholder-shown) {
+      + label {
+        display: block;
+        top: -1.1rem;
+      }
+    }
+  }
+}

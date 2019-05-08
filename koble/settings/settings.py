@@ -25,6 +25,7 @@ SECRET_KEY = '!e5-mzdv5!9rfo)h4a+j&7m-wh-q4xz6m!ko_wwnpyl80xox9w'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'knytte.herokuapp.com']
 
+AUTH_USER_MODEL = 'authentication.Profile'
 
 # Application definition
 
@@ -36,7 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Apps
-    'home'
+    'home',
+    'authentication',
+    'features',
+    # Third party
+    'social_django'
+]
+
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend'
 ]
 
 MIDDLEWARE = [
@@ -47,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware'
 ]
 
 ROOT_URLCONF = 'koble.urls'
@@ -62,6 +73,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect'
             ],
         },
     },

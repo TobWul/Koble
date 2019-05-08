@@ -1,17 +1,64 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block extra_head %}
+    <style>
+        body {
+            background-color: #000051;
+        }
+    </style>
+{% endblock %}
+
 {% block body %}
-{% include 'components/nav.html' %}
-<div id="landingpage">
-    <section class="landing-screen">
-        <div class="landing-text">
-            <h1>Vi kobler trening med dine<br>behov</h1>
-            <p>Vi kartlegger treningssentre som oppfyller dine behov, slik<br>at du kan fokusere på det som er viktig
-            </p>
-            <a href=""><img src="{% static 'icons/arrow.svg' %}" alt="arrow">Utforsk treningssentre</a>
-        </div>
-        <img id="main-illustration" src="{% static 'illustrations/treningssenter.svg' %}" alt="Treningssenter">
-    </section>
-</div>
+    {% include 'components/nav.html' %}
+    <div id="landingpage">
+        <section class="landing-screen">
+            <div class="landing-text">
+                <h1>Vi kobler trening med dine<br>behov</h1>
+                <p>Vi kartlegger treningssentre som oppfyller dine behov, slik<br>at du kan fokusere på det som er
+                    viktig
+                </p>
+                <a href="" class="arrow-link"><img src="{% static 'icons/arrow.svg' %}" alt="arrow">Utforsk
+                    treningssentre</a>
+            </div>
+            <img id="main-illustration" src="{% static 'illustrations/treningssenter.svg' %}" alt="Treningssenter">
+            <div class="dots">
+                <div class="dot selected"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+        <section class="landing-page-cards">
+            <div class="landing-page-card"><img src="{% static 'illustrations/treningssenter.svg' %}"
+                                                alt="Treningssenter">
+                <h3>Treningssenter</h3>
+                <p>Ikke alle treningssentre er godt tilrettelagte. Vi ønsker å fremme de som er det.</p>
+                <a href="">Utforsk</a>
+            </div>
+            <div class="landing-page-card"><img src="{% static 'illustrations/aktiviteter.svg' %}" alt="Aktiviteter">
+                <h3>Aktiviteter</h3>
+                <p>Du vil bli overrasket over mangfoldet aktiviteter som finnes. Oppdag de som passer deg best.</p>
+                <a href="">Utforsk</a>
+            </div>
+            <div class="landing-page-card"><img src="{% static 'illustrations/tur.svg' %}" alt="Tur">
+                <h3>Tur</h3>
+                <p>Når der først er fint vær ute, vil vi at du skal få så mye ut av dagen som mulig</p>
+                <a href="">Utforsk</a>
+            </div>
+        </section>
+        <section class="interviews">
+            <div>
+                <img src="{% static 'illustrations/intervju1.png' %}" alt="Rullestolbruker">
+                <h2>En utfordring for deg kan være utfordring for andre</h2>
+                <p>Har du aktiviteter du ønsker å dele? Vi sørger for at informasjonen kommer frem til de som vil sette pris på den.</p>
+                <a href="" class="arrow-link"><img src="{% static 'icons/arrow.svg' %}" alt="arrow">Send inn forslag</a>
+            </div>
+            <div>
+                <img src="{% static 'illustrations/intervju2.png' %}" alt="Rullestolbruker">
+                <h2>Kan jeg dra på fisketur?</h2>
+                <p>Utforsk aktiviteter du ikke visste fantes. Vi samler erfaringer og anbefalinger på en plass, slik at du lett kan avgjøre hva som best for deg. </p>
+                <a href="" class="arrow-link"><img src="{% static 'icons/arrow.svg' %}" alt="arrow">Utforsk aktiviteter</a>
+            </div>
+        </section>
+    </div>
 {% endblock %}

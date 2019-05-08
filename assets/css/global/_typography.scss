@@ -6,6 +6,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }
 
 // Header
@@ -24,14 +25,12 @@ h3 {
   font-size: least-squares-fit($h3);
 }
 
-h4 {
-  font-size: 1.125rem;
+h4, h5, h6 {
+  $h5: (576: 20, 992: 20);
+  font-size: least-squares-fit($h5);
 }
 
-h5 {
-  font-size: 0.875rem;
-}
-
-h6 {
-  font-size: 0.75rem;
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
 }

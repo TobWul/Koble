@@ -7,11 +7,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
     <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="icon" href="{% static 'icons/Logo.png' %}">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>Koble</title>
+    {% block extra_head %}
+    {% endblock %}
 </head>
 <body>
-    {% block body %}
-    {% endblock %}
+{% block body %}
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/kute.js@1.6.6/kute.min.js"></script>
+{% block js %}
+{% endblock %}
 </body>
 </html>

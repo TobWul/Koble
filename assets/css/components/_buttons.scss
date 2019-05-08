@@ -1,0 +1,10 @@
+.button {
+  display: block;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  font-size: 1rem;
+  border-radius: $main-border-radius;
+  padding: 1rem 2rem;
+  outline: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container" id="login">
+    <div class="blob">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 310 350">
+            <!--'M709.498 158c-171.062 0-336.86 170.013-414.112 244.508-81.05 78.16-220.906 117.187-220.906 306.215 0 237.322 163.682 598.787 348.781 514.902 126.72-57.429 183.931-99.993 253.844-275.484 54.084-135.757 210.296-193.167 210.296-420.15C887.4 290.672 946.747 158 709.498 158z',-->
+            <path id="personalBlob" d="M 100 42.9427 C 127.193 43.1984 156.061 53.1919 164.326 79.0993 C 172.492 104.695 154.123 128.785 132.453 144.667 C 110.417 160.818 81.9706 171.254 59.2114 156.141 C 33.7507 139.233 21.4786 106.607 31.8394 77.8533 C 41.4064 51.3024 71.7794 42.6773 100 42.9427"></path>
+        </svg>
+    </div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="input-field">
+            <input type="email" id="id_email" name="email" placeholder="E-post" @input="generateHash()" v-model="name">
+            <label for="id_password">E-post</label>
+        </div>
+        <div class="input-field">
+            <input type="password" id="id_password" name="password" placeholder="Passord">
+            <label for="id_password">Passord</label>
+        </div>
+        <input type="submit" class="button" value="Logg inn">
+        <p>--- OR ---</p>
+        <a href="{% url 'social:begin' 'google-oauth2' %}" class="button">Google</a>
+    </form>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static 'js/blob.js' %}"></script>
+<script>
+    let vue = new Vue({
+        el: '#login',
+        delimiters: ['[{', '}]'],
+        data: {
+            name: ''
+        },
+        methods: {
+            changeBlob: function() {
+                generateNewBlob()
+            },
+            generateHash: function(s) {
+                console.log(hashString(this.name));
+            }
+        }
+    })
+</script>
+{% endblock %}
