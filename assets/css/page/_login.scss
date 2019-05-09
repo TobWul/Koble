@@ -1,7 +1,30 @@
+// animations
+
+.login-enter-active, login-leave-active {
+  transition: transform 500ms ease-in-out;
+}
+
+.login-enter, .login-leave-to {
+  transform: translateX(-100vw);
+}
+
 #login {
+  margin-top: 10%;
   .blob {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 240px;
+    max-height: 240px;
     margin: 0 auto;
+    object-fit: fill;
+    display: block;
+  }
+  .login-form {
+    .input-field {
+      width: 350px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .button {
+    margin: 1rem auto;
   }
 }

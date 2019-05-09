@@ -49,7 +49,7 @@ def send_confiramtion_email(user_email):
 
 def logout_view(request):
     logout(request)
-    redirect('home')
+    return redirect('home')
 
 
 class RegisterFormView(View):

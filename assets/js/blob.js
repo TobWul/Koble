@@ -1,56 +1,59 @@
-// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-//   <path d="
-//   M 165 116
-//   C 190 111, 246 108, 269 139
-//   S 288 228, 227 242
-//   S 137 240, 130 200
-//   S , 165 116" stroke="black" fill="#0093bc"/>
-// </svg>
-//
+let weights = new Array(21).fill(0);
+const r = 20;
+const blob = document.querySelector('#personalBlob');
 
-function hashString(s) {
-    let stringNum = 0;
+function hashCode(s) {
+    let j = 0;
     for (let i = 0; i < s.length; i++) {
-        stringNum += parseInt(s.charCodeAt(i)) * i;
+        weights[j] += s.charCodeAt(i);
+        j++;
+        if (j >= weights.length) {
+            j = 0;
+        }
     }
-    return stringNum;
+    // Normalizing values
+    const ratio = Math.max.apply(Math, weights);
+    weights = weights.map(function (v, index) {
+        return v / ratio * r + index;
+    });
 }
 
-hashString("Tobias Wulvik");
+function calculateParallelPoint(startX, startY, x, y) {
+    let v = [(startX - x), (startY - y)];
+    return [(startX + v[0]), (startY + v[1])];
+}
 
-function generateNewBlob(k) {
+function generateNewBlob() {
     // Start point
-    const startX = 165;
-    const startY = 116;
+    let startX = 82 + weights[0] / 2;
+    let startY = 22 + weights[1] / 3;
 
     // Point 2
-    const p2c1x = 190;
-    const p2c1y = 111;
-    const p2c2x = 246;
-    const p2c2y = 108;
-    const p2x = 269;
-    const p2y = 139;
+    let p2c1x = 120 + weights[2];
+    let p2c1y = 20 + weights[3];
 
+    // Point 6
+    let p6cx, p6cy;
+    [p6cx, p6cy] = calculateParallelPoint(startX, startY, p2c1x, p2c1y);
 
-    // Point 3
-    const p3cx = 288;
-    const p3cy = 228;
-    const p3x = 227;
-    const p3y = 242;
+    let d = `M ${startX} ${startY}
+    C ${p2c1x} ${p2c1y}, ${136 + weights[4]} ${30 + weights[5]}, ${145 + weights[6]} ${54 + weights[7]}
+    S ${156 + weights[8]} ${94 + weights[9]}, ${132 + weights[10]} ${115 + weights[11]} 
+    S ${83 + weights[12]} ${144 + weights[13]}, ${57 + weights[14]} ${124 + weights[15]} 
+    S ${16 + weights[16]} ${81 + weights[17]}, ${34 + weights[18]} ${54 + weights[19]} 
+    S ${p6cx} ${p6cy}, ${startX} ${startY}`;
 
-    // Point 4
-    const p4cx = 137;
-    const p4cy = 240;
-    const p4x = 130;
-    const p4y = 200;
-
-    // Point 5
-    const p5cx = 115;
-    const p5cy = 126;
-    const p5x = 165;
-    const p5y = 116;
-
-    return `M ${startX} ${startY} C ${p2c1x} ${p2c1y}, ${p2c2x} ${p2c2y}, ${p2x} ${p2y} S ${p3cx} ${p3cy}, ${p3x} ${p3y} S ${p4cx} ${p4cy}, ${p4x} ${p4y} S ${p5cx} ${p5cy}, ${p5x} ${p5y}`
+    let tween = KUTE.to('#personalBlob',
+        {
+            path: d
+        },
+        {
+            duration: 800,
+            easing: 'easingElasticOut',
+            morphPrecision: 4
+        }
+    ).start();
+    document.querySelector('#personalBlob').setAttribute('d', d);
 }
 
-document.querySelector('#personalBlob').setAttribute('d', generateNewBlob(12));
+generateNewBlob(Math.random() * 20);
