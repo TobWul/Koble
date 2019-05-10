@@ -1,55 +1,138 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block extra_head %}
+    <style>
+        .login-enter-active, .login-leave-active, .registration-credentials-enter-active,
+        .registration-credentials-leave-active, .things-enter-active, .things-leave-active,
+        .end-enter-active, .end-leave-active {
+            transition: transform 500ms;
+        }
+
+        .login-enter, .login-leave-to, .registration-credentials-leave-to, .things-leave-to {
+            transform: translateX(-100vw);
+            position: absolute;
+        }
+
+        .registration-credentials-enter, .things-enter, .end-enter, .end-leave {
+            transform: translateX(100vw);
+        }
+
+    </style>
+{% endblock %}
+
 {% block body %}
     <div class="container narrow" id="login">
-        <svg class="blob" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        <svg id="blob" :class="{headerBlob: selectThings}" xmlns:xlink="http://www.w3.org/1999/xlink"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
              viewBox="10 10 180 170">
-            <!--'M709.498 158c-171.062 0-336.86 170.013-414.112 244.508-81.05 78.16-220.906 117.187-220.906 306.215 0 237.322 163.682 598.787 348.781 514.902 126.72-57.429 183.931-99.993 253.844-275.484 54.084-135.757 210.296-193.167 210.296-420.15C887.4 290.672 946.747 158 709.498 158z',-->
             <path id="personalBlob" d="M 82 22
-    C 120 20, 136 30, 145 54
-    S 156 94, 132 115
-    S 83 144, 57 124
-    S 16 81, 34 54
-    S 44 24, 82 22"></path>
+                C 120 20, 136 30, 145 54
+                S 156 94, 132 115
+                S 83 144, 57 124
+                S 16 81, 34 54
+                S 44 24, 82 22"></path>
         </svg>
         <transition name="login">
-            <form action="" method="post" class="login-form" v-if="!isRegistering">
-                {% csrf_token %}
-                <div class="input-field">
-                    <input type="email" id="id_login_email" name="email" placeholder="E-post">
-                    <label for="id_password">E-post</label>
-                </div>
-                <div class="input-field">
-                    <input type="password" id="id_login_password" name="password" placeholder="Passord">
-                    <label for="id_login_password">Passord</label>
-                </div>
-                <input type="submit" class="button" value="Logg inn">
-            </form>
+            <div v-if="!isRegistering">
+                <form action="" method="post" class="login-form">
+                    {% csrf_token %}
+                    <div class="input-field">
+                        <input type="email" id="id_login_email" name="email" placeholder="E-post">
+                        <label for="id_password">E-post</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="id_login_password" name="password" placeholder="Passord">
+                        <label for="id_login_password">Passord</label>
+                    </div>
+                    <input type="submit" class="button" value="Logg inn">
+                </form>
+                <button id="register" class="button primary" @click="isRegistering = true; event.preventDefault()">
+                    Registrer
+                    ny bruker
+                </button>
+            </div>
         </transition>
-        <button id="register" class="button primary" @click="isRegistering = true">Registrer ny bruker</button>
         {#        <p>--- OR ---</p>#}
         {#        <a href="{% url 'social:begin' 'google-oauth2' %}" class="button">Google</a>#}
-        <form action="" method="post" id="register-form" v-if="isRegistering">
-            <div class="input-field">
-                <input type="text" name="firstname" id="id_firstname" placeholder="Fornavn" v-model="firstname"
-                       @input="generateHash()">
-                <label for="id_firstname">Fornavn</label>
-            </div>
-            <div class="input-field">
-                <input type="text" name="lastname" id="id_lastname" placeholder="Etternavn" v-model="lastname"
-                       @input="generateHash()">
-                <label for="id_firstname">Etternavn</label>
-            </div>
-            <div class="input-field">
-                <input type="text" name="email" id="id_email" placeholder="E-post" v-model="email"
-                       @input="generateHash()">
-                <label for="id_email">Fornavn</label>
-            </div>
-            <div class="input-field">
-                <input type="password" name="password" id="id_password" placeholder="Passord">
-                <label for="id_password">Fornavn</label>
-            </div>
+        <form action="" method="post" id="register-form">
+            <transition name="registration-credentials">
+                <div v-if="isRegistering && !selectThings && !endScreen">
+                    <div class="input-field">
+                        <input type="text" name="firstname" id="id_firstname" placeholder="Fornavn" v-model="firstname"
+                               @input="generateHash()">
+                        <label for="id_firstname">Fornavn</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="lastname" id="id_lastname" placeholder="Etternavn" v-model="lastname"
+                               @input="generateHash()">
+                        <label for="id_firstname">Etternavn</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="email" id="id_email" placeholder="E-post" v-model="email"
+                               @input="generateHash()">
+                        <label for="id_email">Fornavn</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" id="id_password" placeholder="Passord">
+                        <label for="id_password">Fornavn</label>
+                    </div>
+                    <button class="button primary" @click="event.preventDefault(); selectThings = true; getNameWidth()">Neste</button>
+                </div>
+            </transition>
+            <transition name="things">
+                <div v-show="isRegistering && selectThings" class="select-things">
+                    <h2 id="firstname">Hei [{ firstname }]</h2>
+                    <p>Hva ser du etter i en treningsarena? Dette vil hjelpe oss med å finne aktiviteter som passer deg
+                        best</p>
+                    <br>
+                    <div class="things">
+                        <div class="row">
+                            <div class="filter-icon" :class="{selected: filters.isToilet}" @click="filters.isToilet = !filters.isToilet; generateHash()">
+                                <img src="{% static 'icons/toilet.svg' %}" alt="Toilet">
+                                <img class="blob" src="{% static 'icons/blobs/blob1.svg' %}" alt="Blob">
+                                HC toalett
+                            </div>
+                            <div class="filter-icon" :class="{selected: filters.isStairs}" @click="filters.isStairs = !filters.isStairs; generateHash()">
+                                <img src="{% static 'icons/stairs.svg' %}" alt="Stairs">
+                                <img class="blob" src="{% static 'icons/blobs/blob2.svg' %}" alt="Blob">
+                                Kun én etasje
+                            </div>
+                            <div class="filter-icon" :class="{selected: filters.isSocial}" @click="filters.isSocial = !filters.isSocial; generateHash()">
+                                <img src="{% static 'icons/social.svg' %}" alt="Social">
+                                <img class="blob" src="{% static 'icons/blobs/blob3.svg' %}" alt="Blob">
+                                Sosialt
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="filter-icon" :class="{selected: filters.isElevator}" @click="filters.isElevator = !filters.isElevator; generateHash()">
+                                <img src="{% static 'icons/elevator.svg' %}" alt="Elevator">
+                                <img class="blob" src="{% static 'icons/blobs/blob4.svg' %}" alt="Blob">
+                                Heis
+                            </div>
+                            <div class="filter-icon" :class="{selected: filters.isParking}" @click="filters.isParking = !filters.isParking; generateHash()">
+                                <img src="{% static 'icons/parking.svg' %}" alt="Parking">
+                                <img class="blob" src="{% static 'icons/blobs/blob5.svg' %}" alt="Blob">
+                                HC parkering
+                            </div>
+                            <div class="filter-icon" :class="{selected: filters.isTrainer}" @click="filters.isTrainer = !filters.isTrainer; generateHash()">
+                                <img src="{% static 'icons/personal-trainer.svg' %}" alt="Personal trainer">
+                                <img class="blob" src="{% static 'icons/blobs/blob6.svg' %}" alt="Blob">
+                                Personlig trener
+                            </div>
+                        </div>
+                        <button class="button primary" @click="event.preventDefault(); selectThings = false; endScreen = true">
+                            Ferdig
+                        </button>
+                    </div>
+                </div>
+            </transition>
+            <transition name="end">
+                <div v-if="isRegistering && endScreen">
+                    <h1>Gratulerer [{ firstname }]</h1>
+                    <p>Din profil har blitt opprettet</p>
+                </div>
+            </transition>
         </form>
     </div>
 {% endblock %}
@@ -63,16 +146,39 @@
                 firstname: '',
                 lastname: '',
                 email: '',
-                isRegistering: false
+                isRegistering: true,
+                selectThings: false,
+                endScreen: false,
+                filters: {
+                    isToilet: false,
+                    isStairs: false,
+                    isSocial: false,
+                    isElevator: false,
+                    isParking: false,
+                    isTrainer: false
+                }
             },
             methods: {
-                changeBlob: function () {
-                    let k = Math.random() * 20;
-                    generateNewBlob(k);
-                },
-                generateHash: function (s) {
-                    hashCode(this.firstname + this.lastname + this.email);
+                generateHash: function () {
+                    let s = '';
+                    if (this.firstname) { s += this.firstname }
+                    if (this.lastname) { s += this.lastname }
+                    if (this.email) { s += this.email }
+                    if (this.filters.isToilet) { s += 'Toilet' }
+                    if (this.filters.isStairs) { s += 'Stairs' }
+                    if (this.filters.isSocial) { s += 'Social' }
+                    if (this.filters.isElevator) { s += 'Elevator' }
+                    if (this.filters.isParking) { s += 'Parking' }
+                    if (this.filters.isTrainer) { s += 'Trainer' }
+
+                    hashCode(s);
                     generateNewBlob();
+                },
+                getNameWidth: function() {
+                    setTimeout(function () {
+                        let width = document.getElementById('firstname').offsetWidth / 2 - (5 * 16);
+                        document.getElementById('blob').style.left = `calc(50% + ${width}px)`;
+                    }, 1);
                 }
             }
         })

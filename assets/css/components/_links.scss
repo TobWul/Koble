@@ -11,7 +11,7 @@
   }
 
   img {
-    transition: transform 200ms cubic-bezier(.28,0,.48,1.5);
+    transition: transform 200ms $bounce-transition;
     margin-right: 1rem;
   }
 }

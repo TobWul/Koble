@@ -50,7 +50,7 @@ function generateNewBlob() {
         {
             duration: 800,
             easing: 'easingElasticOut',
-            morphPrecision: 4
+            morphPrecision: 3
         }
     ).start();
     document.querySelector('#personalBlob').setAttribute('d', d);

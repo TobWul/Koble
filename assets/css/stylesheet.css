@@ -180,7 +180,8 @@ nav#nav {
   outline: 0;
   cursor: pointer;
   font-weight: 500;
-  transition: transform 200ms ease-in-out; }
+  transition: transform 200ms ease-in-out;
+  cursor: pointer; }
   .button:hover {
     transform: scale(1.02); }
   .button:active {
@@ -190,7 +191,7 @@ nav#nav {
     background-color: #000051;
     color: white; }
 
-.blob {
+#blob {
   fill: #FF5771; }
 
 .arrow-link {
@@ -313,25 +314,80 @@ nav#nav {
       left: auto;
       right: 5%; }
 
-.login-enter-active, login-leave-active {
-  transition: transform 500ms ease-in-out; }
-
-.login-enter, .login-leave-to {
-  transform: translateX(-100vw); }
-
 #login {
-  margin-top: 10%; }
-  #login .blob {
+  margin-top: 10%;
+  text-align: center;
+  position: relative; }
+  #login #blob {
     max-width: 240px;
     max-height: 240px;
     margin: 0 auto;
     object-fit: fill;
     display: block; }
-  #login .login-form .input-field {
+    #login #blob.headerBlob {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateY(-25%);
+      max-width: 5rem;
+      max-height: 5rem; }
+  #login .input-field {
     width: 350px;
     margin-right: auto;
     margin-left: auto; }
   #login .button {
     margin: 1rem auto; }
+  #login .select-things h2 {
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    font-size: 2rem; }
+  #login .select-things p {
+    max-width: 43ch;
+    margin: 0 auto 1rem; }
+  #login .select-things .things .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+  #login .select-things .things .filter-icon {
+    position: relative;
+    cursor: pointer;
+    width: 6rem;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */ }
+    #login .select-things .things .filter-icon img:not(.blob) {
+      display: block;
+      margin: 1rem auto; }
+    #login .select-things .things .filter-icon.selected img.blob {
+      transform: translate(-50%, -50%) scale(1); }
+    #login .select-things .things .filter-icon img.blob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 6rem;
+      width: 6rem;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 200ms cubic-bezier(0.28, 0, 0.48, 1.5);
+      z-index: -1; }
+    #login .select-things .things .filter-icon:hover::after {
+      transform: translate(-50%, -50%) scale(1); }
+    #login .select-things .things .filter-icon::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 5rem;
+      height: 5rem;
+      border-radius: 400px;
+      background-color: #EFEFEF;
+      z-index: -2;
+      transition: transform 200ms cubic-bezier(0.28, 0, 0.48, 1.5); }
 
 /*# sourceMappingURL=stylesheet.css.map */
