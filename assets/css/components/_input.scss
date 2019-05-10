@@ -1,6 +1,7 @@
 .input-field {
   position: relative;
   margin-bottom: 1.5rem;
+
   &:not(.fluid) {
     max-width: 70ch;
   }
@@ -16,6 +17,9 @@
     color: $light-gray;
     transition: box-shadow 100ms ease-in-out;
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
 
     &:hover {

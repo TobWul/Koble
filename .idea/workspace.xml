@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b349ed-c404-4f15-ae4c-3cb4304339e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_global.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_global.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_variables.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_variables.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_blob.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_blob.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_buttons.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_buttons.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_links.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_links.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_login.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_login.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_blob.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_blob.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_input.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_input.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_links.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_links.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/components/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_input.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/global/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/global/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/page/_login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/page/_login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/blob.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/blob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/templates/authentication/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/templates/authentication/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/authentication/templates/authentication/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
+            <state relative-caret-position="2337">
               <caret line="172" selection-start-line="172" selection-end-line="172" />
             </state>
           </provider>
@@ -63,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/blob.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="-513">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
@@ -90,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/components/_buttons.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -120,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/components/_input.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="460">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -129,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="161">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -187,16 +177,16 @@
         <option value="$PROJECT_DIR$/assets/css/components/_navigation.scss" />
         <option value="$PROJECT_DIR$/koble/urls.py" />
         <option value="$PROJECT_DIR$/authentication/views.py" />
-        <option value="$PROJECT_DIR$/assets/css/components/_input.scss" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/assets/css/components/_buttons.scss" />
-        <option value="$PROJECT_DIR$/assets/css/global/_global.scss" />
         <option value="$PROJECT_DIR$/assets/css/global/_variables.scss" />
         <option value="$PROJECT_DIR$/assets/css/components/_links.scss" />
         <option value="$PROJECT_DIR$/assets/css/components/_blob.scss" />
         <option value="$PROJECT_DIR$/assets/css/page/_login.scss" />
         <option value="$PROJECT_DIR$/authentication/templates/authentication/login.html" />
         <option value="$PROJECT_DIR$/assets/js/blob.js" />
+        <option value="$PROJECT_DIR$/assets/css/global/_global.scss" />
+        <option value="$PROJECT_DIR$/assets/css/components/_input.scss" />
+        <option value="$PROJECT_DIR$/assets/css/components/_buttons.scss" />
       </list>
     </option>
   </component>
@@ -353,18 +343,18 @@
       <workItem from="1557246595588" duration="10949000" />
       <workItem from="1557326318845" duration="11413000" />
       <workItem from="1557432188103" duration="799000" />
-      <workItem from="1557487143823" duration="6069000" />
+      <workItem from="1557487143823" duration="6387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43445000" />
+    <option name="totallyTimeSpent" value="43763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,7 +368,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32901832" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32901832" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -628,34 +618,6 @@
         <state relative-caret-position="-1011" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/components/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/global/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/components/_input.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/components/_links.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -670,16 +632,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/page/_login.scss">
+    <entry file="file://$PROJECT_DIR$/assets/js/blob.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="-513">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/authentication/templates/authentication/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="2337">
           <caret line="172" selection-start-line="172" selection-end-line="172" />
         </state>
       </provider>
@@ -691,10 +653,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/blob.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="161">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/page/_login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/global/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/components/_input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/components/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>

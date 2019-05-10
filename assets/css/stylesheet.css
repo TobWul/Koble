@@ -77,6 +77,10 @@ p {
   font-size: 1rem;
   line-height: 1.5em; }
 
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; }
+
 .container {
   margin: 0 auto;
   width: 95%; }
@@ -144,7 +148,10 @@ nav#nav {
     box-shadow: 0 0 0 2px #9D9D9D;
     color: #9D9D9D;
     transition: box-shadow 100ms ease-in-out;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
     .input-field input:hover {
       box-shadow: 0 0 0 2px #1A237E; }
     .input-field input:focus, .input-field input:not(:placeholder-shown) {
@@ -181,7 +188,10 @@ nav#nav {
   cursor: pointer;
   font-weight: 500;
   transition: transform 200ms ease-in-out;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
   .button:hover {
     transform: scale(1.02); }
   .button:active {
