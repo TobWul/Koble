@@ -70,8 +70,10 @@
           transition: transform 200ms $bounce-transition;
           z-index: -1;
         }
-        &:hover::after {
-          transform: translate(-50%, -50%) scale(1);
+        @media screen and (min-width: $lg) {
+          &:hover::after {
+            transform: translate(-50%, -50%) scale(1);
+          }
         }
         &::after {
           content: '';
