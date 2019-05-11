@@ -100,6 +100,21 @@ img {
   user-select: none;
   /* Likely future */ }
 
+#hamburger {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer; }
+  @media screen and (min-width: 56.25em) {
+    #hamburger {
+      display: none; } }
+  #hamburger .bar {
+    width: 32px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #000051;
+    margin-bottom: 8px; }
+
 nav#nav {
   position: fixed;
   top: 4rem;
@@ -118,6 +133,14 @@ nav#nav {
   /* IE 10+ */
   user-select: none;
   /* Likely future */ }
+  @media screen and (max-width: 56.25em) {
+    nav#nav {
+      transform: scaleY(0);
+      transform-origin: top; } }
+  @media screen and (max-width: 68.75em) {
+    nav#nav {
+      color: #000051;
+      font-size: 1.2rem; } }
   nav#nav a {
     margin-right: 3.5rem; }
   nav#nav a#logo {
@@ -176,6 +199,11 @@ nav#nav {
       display: block;
       top: -0.4rem;
       z-index: 10; }
+  .input-field .errorlist {
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 1rem;
+    color: red; }
 
 .button {
   display: block;
@@ -261,7 +289,7 @@ nav#nav {
   justify-content: center;
   grid-template-columns: repeat(3, 350px);
   grid-gap: 2rem;
-  padding: 8rem 0 12rem;
+  padding: 8rem 5% 12rem;
   background-color: white; }
   @media screen and (max-width: 68.75em) {
     #landingpage .landing-page-cards {
@@ -288,6 +316,8 @@ nav#nav {
       max-height: 200px; }
       @media screen and (max-width: 68.75em) {
         #landingpage .landing-page-cards .landing-page-card img {
+          max-width: 150px;
+          max-height: 150px;
           top: 2rem;
           right: 2rem;
           left: auto;
@@ -299,6 +329,9 @@ nav#nav {
       font-weight: 500;
       margin-top: 1rem;
       display: block; }
+@media screen and (max-width: 68.75em) {
+  #landingpage .interviews {
+    display: none; } }
 #landingpage .interviews div {
   margin: 4rem 5%;
   color: white;

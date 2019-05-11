@@ -61,7 +61,7 @@
     justify-content: center;
     grid-template-columns: repeat(3, 350px);
     grid-gap: 2rem;
-    padding: 8rem 0 12rem;
+    padding: 8rem 5% 12rem;
     background-color: white;
     @media screen and (max-width: $xl) {
       grid-template-columns: 1fr;
@@ -89,6 +89,8 @@
         max-width: 250px;
         max-height: 200px;
         @media screen and (max-width: $xl) {
+          max-width: 150px;
+          max-height: 150px;
           top: 2rem;
           right: 2rem;
           left: auto;
@@ -110,6 +112,9 @@
   }
 
   .interviews {
+    @media screen and (max-width: $xl) {
+      display: none;
+    }
     div {
       margin: 4rem 5%;
       color: white;

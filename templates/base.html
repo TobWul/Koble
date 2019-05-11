@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
     <link rel="icon" href="{% static 'icons/Logo.png' %}">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
     <title>Koble</title>
     {% block extra_head %}
     {% endblock %}
@@ -22,6 +26,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.2/kute.min.js"></script> <!-- core KUTE.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.2/kute-svg.min.js"></script>
+<script src="{% static 'js/ajaxSetup.js' %}"></script>
 {% block js %}
 {% endblock %}
 </body>

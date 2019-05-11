@@ -56,6 +56,7 @@
         {#        <p>--- OR ---</p>#}
         {#        <a href="{% url 'social:begin' 'google-oauth2' %}" class="button">Google</a>#}
         <form action="" method="post" id="register-form">
+            {% csrf_token %}
             <transition name="registration-credentials">
                 <div v-if="isRegistering && !selectThings && !endScreen">
                     <div class="input-field">
@@ -71,13 +72,19 @@
                     <div class="input-field">
                         <input type="text" name="email" id="id_email" placeholder="E-post" v-model="email"
                                @input="generateHash()">
-                        <label for="id_email">Fornavn</label>
+                        <label for="id_email">E-post</label>
+                        <ul class="errorlist">
+                            <li>[{ emailError }]</li>
+                        </ul>
                     </div>
                     <div class="input-field">
-                        <input type="password" name="password" id="id_password" placeholder="Passord">
-                        <label for="id_password">Fornavn</label>
+                        <input type="password" name="password" id="id_password" placeholder="Passord"
+                               v-model="password">
+                        <label for="id_password">Passord</label>
                     </div>
-                    <button class="button primary" @click="event.preventDefault(); selectThings = true; getNameWidth()">Neste</button>
+                    <button class="button primary" @click="event.preventDefault(); checkEmail(); getNameWidth()">
+                        Neste
+                    </button>
                 </div>
             </transition>
             <transition name="things">
@@ -88,40 +95,47 @@
                     <br>
                     <div class="things">
                         <div class="row">
-                            <div class="filter-icon" :class="{selected: filters.isToilet}" @click="filters.isToilet = !filters.isToilet; generateHash()">
+                            <div class="filter-icon" :class="{selected: filters.isToilet}"
+                                 @click="filters.isToilet = !filters.isToilet; generateHash()">
                                 <img src="{% static 'icons/toilet.svg' %}" alt="Toilet">
                                 <img class="blob" src="{% static 'icons/blobs/blob1.svg' %}" alt="Blob">
                                 HC toalett
                             </div>
-                            <div class="filter-icon" :class="{selected: filters.isStairs}" @click="filters.isStairs = !filters.isStairs; generateHash()">
+                            <div class="filter-icon" :class="{selected: filters.isStairs}"
+                                 @click="filters.isStairs = !filters.isStairs; generateHash()">
                                 <img src="{% static 'icons/stairs.svg' %}" alt="Stairs">
                                 <img class="blob" src="{% static 'icons/blobs/blob2.svg' %}" alt="Blob">
                                 Kun én etasje
                             </div>
-                            <div class="filter-icon" :class="{selected: filters.isSocial}" @click="filters.isSocial = !filters.isSocial; generateHash()">
+                            <div class="filter-icon" :class="{selected: filters.isSocial}"
+                                 @click="filters.isSocial = !filters.isSocial; generateHash()">
                                 <img src="{% static 'icons/social.svg' %}" alt="Social">
                                 <img class="blob" src="{% static 'icons/blobs/blob3.svg' %}" alt="Blob">
                                 Sosialt
                             </div>
                         </div>
                         <div class="row">
-                            <div class="filter-icon" :class="{selected: filters.isElevator}" @click="filters.isElevator = !filters.isElevator; generateHash()">
+                            <div class="filter-icon" :class="{selected: filters.isElevator}"
+                                 @click="filters.isElevator = !filters.isElevator; generateHash()">
                                 <img src="{% static 'icons/elevator.svg' %}" alt="Elevator">
                                 <img class="blob" src="{% static 'icons/blobs/blob4.svg' %}" alt="Blob">
                                 Heis
                             </div>
-                            <div class="filter-icon" :class="{selected: filters.isParking}" @click="filters.isParking = !filters.isParking; generateHash()">
+                            <div class="filter-icon" :class="{selected: filters.isParking}"
+                                 @click="filters.isParking = !filters.isParking; generateHash()">
                                 <img src="{% static 'icons/parking.svg' %}" alt="Parking">
                                 <img class="blob" src="{% static 'icons/blobs/blob5.svg' %}" alt="Blob">
                                 HC parkering
                             </div>
-                            <div class="filter-icon" :class="{selected: filters.isTrainer}" @click="filters.isTrainer = !filters.isTrainer; generateHash()">
+                            <div class="filter-icon" :class="{selected: filters.isTrainer}"
+                                 @click="filters.isTrainer = !filters.isTrainer; generateHash()">
                                 <img src="{% static 'icons/personal-trainer.svg' %}" alt="Personal trainer">
                                 <img class="blob" src="{% static 'icons/blobs/blob6.svg' %}" alt="Blob">
                                 Personlig trener
                             </div>
                         </div>
-                        <button class="button primary" @click="event.preventDefault(); selectThings = false; endScreen = true">
+                        <button class="button primary"
+                                @click="event.preventDefault(); register()">
                             Ferdig
                         </button>
                     </div>
@@ -131,6 +145,7 @@
                 <div v-if="isRegistering && endScreen">
                     <h1>Gratulerer [{ firstname }]</h1>
                     <p>Din profil har blitt opprettet</p>
+                    <a href="{% url 'home' %}" class="button primary">Gå til hjemsiden</a>
                 </div>
             </transition>
         </form>
@@ -146,6 +161,8 @@
                 firstname: '',
                 lastname: '',
                 email: '',
+                emailError: '',
+                password: '',
                 isRegistering: false,
                 selectThings: false,
                 endScreen: false,
@@ -161,24 +178,93 @@
             methods: {
                 generateHash: function () {
                     let s = '';
-                    if (this.firstname) { s += this.firstname }
-                    if (this.lastname) { s += this.lastname }
-                    if (this.email) { s += this.email }
-                    if (this.filters.isToilet) { s += 'Toilet' }
-                    if (this.filters.isStairs) { s += 'Stairs' }
-                    if (this.filters.isSocial) { s += 'Social' }
-                    if (this.filters.isElevator) { s += 'Elevator' }
-                    if (this.filters.isParking) { s += 'Parking' }
-                    if (this.filters.isTrainer) { s += 'Trainer' }
+                    if (this.firstname) {
+                        s += this.firstname
+                    }
+                    if (this.lastname) {
+                        s += this.lastname
+                    }
+                    if (this.email) {
+                        s += this.email
+                    }
+                    if (this.filters.isToilet) {
+                        s += 'Toilet'
+                    }
+                    if (this.filters.isStairs) {
+                        s += 'Stairs'
+                    }
+                    if (this.filters.isSocial) {
+                        s += 'Social'
+                    }
+                    if (this.filters.isElevator) {
+                        s += 'Elevator'
+                    }
+                    if (this.filters.isParking) {
+                        s += 'Parking'
+                    }
+                    if (this.filters.isTrainer) {
+                        s += 'Trainer'
+                    }
 
                     hashCode(s);
                     generateNewBlob();
                 },
-                getNameWidth: function() {
+                getNameWidth: function () {
                     setTimeout(function () {
                         let width = document.getElementById('firstname').offsetWidth / 2 - (5 * 16);
                         document.getElementById('blob').style.left = `calc(50% + ${width}px)`;
                     }, 1);
+                },
+                getCSRF: function () {
+                    return document.getElementsByName("csrfmiddlewaretoken")[0].value;
+                },
+                checkEmail: function () {
+                    self = this;
+                    $.ajax({
+                        type: 'POST',
+                        url: '{% url "check_email" %}',
+                        data: {
+                            'email': self.email,
+                            'password': self.password
+                        },
+                        success: function (response) {
+                            console.log(response);
+                            if (response === 'False') {
+                                self.selectThings = true;
+                                self.emailError = '';
+                            } else {
+                                self.emailError = 'E-posten eksisterer allerede';
+                            }
+                        },
+                        error: function (response) {
+                            console.log(response);
+                        }
+                    });
+                },
+                register: function () {
+                    let self = this;
+                    $.ajax({
+                        type: 'POST',
+                        url: '{% url "register" %}',
+                        data: {
+                            'email': self.email,
+                            'firstname': self.firstname,
+                            'lastname': self.lastname,
+                            'password': self.password
+                        },
+                        success: function (response) {
+                            if (response === 'True') {
+                                self.selectThings = false;
+                                self.endScreen = true;
+                            }
+                            else {
+                                alert('Noe gikk galt');
+                            }
+                        },
+                        error: function (response) {
+                            console.log(response);
+                        }
+                    });
                 }
             }
         })

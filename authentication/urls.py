@@ -6,7 +6,8 @@ from . import views
 
 urlpatterns = [
     path('oauth', include('social_django.urls', namespace='social')),
-    path('register/', views.RegisterFormView.as_view(), name='register'),
+    path('register/', views.register, name='register'),
+    path('check-email/', views.check_email, name='check_email'),
     path('login/', views.LoginFormView.as_view(), name='login'),
     path('logout/', views.logout_view, name='logout'),
 ]

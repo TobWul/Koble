@@ -58,4 +58,10 @@
       }
     }
   }
+  .errorlist {
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 1rem;
+    color: $error;
+  }
 }
