@@ -56,4 +56,4 @@ function generateNewBlob() {
     document.querySelector('#personalBlob').setAttribute('d', d);
 }
 
-generateNewBlob(Math.random() * 20);
+generateNewBlob();

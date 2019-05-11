@@ -60,13 +60,14 @@
             <transition name="registration-credentials">
                 <div v-if="isRegistering && !selectThings && !endScreen">
                     <div class="input-field">
-                        <input type="text" name="firstname" id="id_firstname" placeholder="Fornavn" v-model="firstname"
-                               @input="generateHash()">
+                        <input type="text" name="first_name" maxlength="150" autocomplete="given-name"
+                               id="id_first_name"
+                               placeholder="Fornavn" v-model="firstname" @input="generateHash()">
                         <label for="id_firstname">Fornavn</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" name="lastname" id="id_lastname" placeholder="Etternavn" v-model="lastname"
-                               @input="generateHash()">
+                        <input type="text" name="last_name" maxlength="150" autocomplete="family-name" id="id_last_name"
+                               placeholder="Etternavn" v-model="lastname" @input="generateHash()">
                         <label for="id_firstname">Etternavn</label>
                     </div>
                     <div class="input-field">
@@ -74,13 +75,16 @@
                                @input="generateHash()">
                         <label for="id_email">E-post</label>
                         <ul class="errorlist">
-                            <li>[{ emailError }]</li>
+                            <li v-for="error in emailError">[{ error }]</li>
                         </ul>
                     </div>
                     <div class="input-field">
                         <input type="password" name="password" id="id_password" placeholder="Passord"
                                v-model="password">
                         <label for="id_password">Passord</label>
+                        <ul class="errorlist">
+                            <li v-for="error in passwordError">[{ error }]</li>
+                        </ul>
                     </div>
                     <button class="button primary" @click="event.preventDefault(); checkEmail(); getNameWidth()">
                         Neste
@@ -163,6 +167,7 @@
                 email: '',
                 emailError: '',
                 password: '',
+                passwordError: '',
                 isRegistering: false,
                 selectThings: false,
                 endScreen: false,
@@ -225,17 +230,21 @@
                         url: '{% url "check_email" %}',
                         data: {
                             'email': self.email,
+                            'first_name': self.firstname,
+                            'last_name': self.lastname,
                             'password': self.password
                         },
                         success: function (response) {
                             console.log(response);
-                            if (response === 'False') {
+                            if (response === 'True') {
                                 self.selectThings = true;
                                 self.emailError = '';
                             } else {
-                                self.emailError = 'E-posten eksisterer allerede';
+                                self.emailError = response.email;
+                                self.passwordError = response.password;
                             }
-                        },
+                        }
+                        ,
                         error: function (response) {
                             console.log(response);
                         }
@@ -248,16 +257,15 @@
                         url: '{% url "register" %}',
                         data: {
                             'email': self.email,
-                            'firstname': self.firstname,
-                            'lastname': self.lastname,
+                            'first_name': self.firstname,
+                            'last_name': self.lastname,
                             'password': self.password
                         },
                         success: function (response) {
                             if (response === 'True') {
                                 self.selectThings = false;
                                 self.endScreen = true;
-                            }
-                            else {
+                            } else {
                                 alert('Noe gikk galt');
                             }
                         },

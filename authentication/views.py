@@ -3,7 +3,7 @@ import json
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_slug, validate_email
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.conf import settings
@@ -61,16 +61,12 @@ def logout_view(request):
 
 def check_email(request):
     if request.method == 'POST':
-        email = request.POST['email']
-        password = request.POST['password']
-        error = []
-        try:
-            error.append(validate_email(email))
-            error.append(validate_password(password))
-        except ValidationError:
-            pass
-        print(error)
-        return HttpResponse(Profile.objects.filter(email=email).exists())
+        form = RegisterForm(request.POST)
+        print(request.POST)
+        if not form.is_valid():
+            return JsonResponse(form.errors)
+        else:
+            return HttpResponse(True)
     else:
         return HttpResponse('Error')
 
@@ -79,31 +75,34 @@ def register(request):
     # process form data
     if request.method == 'POST':
         # Cleaned (normalized) data
-        response = request.POST
-        email = validate_email(response['email'])
-        firstname = response['firstname']
-        lastname = response['lastname']
-        password = response['password']
-        if Profile.objects.filter(email=email).exists():
-            return HttpResponse('Email already exists')
-        else:
+        form = RegisterForm(request.POST)
+        print(form.errors)
+        if form.is_valid():
+            form.save(commit=False)
+            email = form.cleaned_data['email']
+            firstname = form.cleaned_data['first_name']
+            lastname = form.cleaned_data['last_name']
+            password = form.cleaned_data['password']
             user = Profile.objects.create(email=email,
                                       first_name=firstname,
                                       last_name=lastname)
 
             user.set_password(password)
             user.save()
+            # Returns User objects if credentials are correct
+            user = authenticate(email=email, password=password)
 
-    # Returns User objects if credentials are correct
-    user = authenticate(email=email, password=password)
+            if user is not None:
+                # send_confiramtion_email(user.email)
+                if user.is_active:
+                    login(request, user)  # Loging in user to the website
+                    return HttpResponse(True)
+            else:
+                return HttpResponse(False)
+        else:
+            return HttpResponse(form.errors)
 
-    if user is not None:
-        # send_confiramtion_email(user.email)
-        if user.is_active:
-            login(request, user)  # Loging in user to the website
-            return HttpResponse(True)
-    else:
-        return HttpResponse(False)
+
 
 
 def PasswordResetView(request):

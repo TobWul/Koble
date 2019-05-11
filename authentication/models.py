@@ -74,3 +74,7 @@ class Profile(AbstractBaseUser):
     @property
     def is_staff(self):
         return self.is_admin
+
+    class Meta:
+        verbose_name = "profil"
+        verbose_name_plural = "profiler"
