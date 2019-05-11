@@ -1,27 +1,30 @@
 {% load static %}
-<div id="hamburger">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-</div>
 <nav id="nav">
     <a href="{% url 'home' %}" id="logo">KOBLE</a>
-    <a to="/">Om oss</a>
-    <a to="/">Kontakt oss</a>
-    <a to="/">Blogg</a>
-    <a to="/">Send inn forslag</a>
-    {% if not request.user.is_authenticated %}
-    <a href="{% url 'login' %}" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Logg inn</a>
-    {% else %}
-        <a href="" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Min side</a>
-    {% endif %}
+    <div id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="nav-items">
+        <a to="/">Om oss</a>
+        <a to="/">Kontakt oss</a>
+        <a to="/">Blogg</a>
+        <a to="/">Send inn forslag</a>
+        {% if not request.user.is_authenticated %}
+            <a href="{% url 'login' %}" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Logg
+                inn</a>
+        {% else %}
+            <a href="" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Min side</a>
+        {% endif %}
+    </div>
 </nav>
 
 {% block js %}
     <script>
         const hamburger = document.getElementById('hamburger');
-        hamburger.addEventListener('click', function() {
-           hamburger.classList.toggle('open');
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('open');
         });
     </script>
-{% endblock%}
+{% endblock %}

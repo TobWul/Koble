@@ -1,17 +1,43 @@
 #hamburger {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  right: 5%;
+  transform: translateY(-20%);
   cursor: pointer;
+  z-index: 10;
+  transition: transform 200ms ease-in-out;
   @media screen and (min-width: $lg) {
     display: none;
   }
+
   .bar {
     width: 32px;
     height: 3px;
     border-radius: $main-border-radius;
     background-color: $primary-color;
     margin-bottom: 8px;
+    transition: background-color 200ms ease-in-out, transform 200ms $bounce-transition;
+  }
+
+  &.open {
+    transform: translate(-4px, -5px);
+    + .nav-items {
+      transform: scaleY(1);
+    }
+    .bar {
+      background-color: white;
+
+      &:nth-child(1) {
+        transform: rotate(-45deg);
+        transform-origin: right center;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg) translate(3px,-2px);
+      }
+      &:nth-child(3) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -19,7 +45,8 @@ nav#nav {
   position: fixed;
   top: 4rem;
   left: 50%;
-  width: 90%;
+  padding: 0 5%;
+  width: 100%;
   transform: translateX(-50%);
   color: white;
   font-size: 1.5rem;
@@ -27,13 +54,32 @@ nav#nav {
   display: flex;
   @include no-select;
 
-  @media screen and (max-width: $lg) {
-    transform: scaleY(0);
-    transform-origin: top;
-  }
   @media screen and (max-width: $xl) {
     color: $primary-color;
     font-size: 1.2rem;
+  }
+
+  .nav-items {
+    transition: transform 200ms ease-in-out;
+    @media screen and (max-width: $lg) {
+      position: fixed;
+      background-color: $primary-color;
+      width: 100vw;
+      top: -4rem;
+      left: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      color: white;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      a {
+        margin: 3rem 2rem 0;
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
   }
 
   a {
@@ -47,6 +93,7 @@ nav#nav {
   }
 
   a.login {
+
     position: relative;
 
     img {
@@ -55,6 +102,9 @@ nav#nav {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
+      @media screen and (max-width: $lg) {
+        display: none;
+      }
     }
   }
 }
