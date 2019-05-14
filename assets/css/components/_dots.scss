@@ -1,0 +1,26 @@
+.dots {
+  $dot-size: 10px;
+
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: $dot-size * 7;
+  justify-content: space-between;
+  align-items: center;
+
+  .dot {
+    display: inline-block;
+    height: $dot-size;
+    width: $dot-size;
+    border-radius: $dot-size;
+    background-color: $light-gray;
+
+    &.selected {
+      height: $dot-size + 2px;
+      width: $dot-size + 2px;
+      background-color: $accent-color;
+    }
+  }
+}

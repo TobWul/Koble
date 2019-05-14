@@ -1,8 +1,9 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 from imagekit.models import ProcessedImageField
 from imagekit.processors import ResizeToFit
 
-from filters.models import Filter
+from filters.models import Filter, NegativeFilter
 from reviews.models import Review
 
 
@@ -12,12 +13,19 @@ class Gym(models.Model):
     address = models.CharField(max_length=1000, null=True, blank=True)
     opening_hours = models.TextField(null=True, blank=True)
     contact_information = models.TextField(null=True, blank=True)
-    positive_filter = models.ManyToManyField(Filter, related_name="positive_filter")
-    negative_filter = models.ManyToManyField(Filter, related_name="negative_filter")
-    reviews = models.ManyToManyField(Review)
+    positive_filter = models.ManyToManyField(Filter, blank=True)
+    negative_filter = models.ManyToManyField(NegativeFilter, blank=True)
+    reviews = models.ManyToManyField(Review, blank=True)
+    slug = models.SlugField()
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            # Only set the slug when the object is created.
+            self.slug = slugify(self.name)  # Does not update to make sure links doesn't get broken
+        super(Gym, self).save(*args, **kwargs)
 
 
 class GymImage(models.Model):

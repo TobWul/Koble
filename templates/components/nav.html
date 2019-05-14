@@ -13,10 +13,13 @@
         </svg>
         KOBLE
     </a>
-    <div class="input-field" id="nav-search">
-        <input type="text" id="search" name="search" placeholder='Prøv "rullestolbasket"'>
-        <img src="{% static 'icons/search-icon.svg' %}" alt="Search icon">
-    </div>
+    <form action="/search" method="get">
+{#        {% csrf_token %}#}
+        <div class="input-field" id="nav-search">
+            <input type="text" name="q" placeholder='Prøv "rullestolbasket"'>
+            <img src="{% static 'icons/search-icon.svg' %}" alt="Search icon">
+        </div>
+    </form>
     <div id="hamburger">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -25,12 +28,13 @@
     <div class="nav-items">
         <a href="/">Kontakt oss</a>
         <a href="/">Blogg</a>
-        <a href="{% url 'suggestion' %}">Send inn forslag</a>
         {% if not request.user.is_authenticated %}
-            <a href="{% url 'login' %}" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Logg
+            <a href="{% url 'suggestion' %}">Send inn forslag</a>
+            <a href="{% url 'login' %}" class="login"><img src="{% static 'icons/blobs/login-blob.svg' %}" alt="">Logg
                 inn</a>
         {% else %}
-            <a href="" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Min side</a>
+            <a href="{% url 'suggestion' %}" class="login"><img src="{% static 'icons/blobs/suggestion-blob.svg' %}"
+                                                                alt="">Send inn forslag</a>
         {% endif %}
     </div>
 </nav>

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+    <div class="container" id="search-results">
+        <form action="/search" method="get">
+            <div class="input-field">
+                <input type="text" name="q" placeholder='Prøv "rullestolbasket"' value="{{ q }}">
+                <label for=""></label>
+            </div>
+        </form>
+        <div class="results">
+            {% for gym in gym_results %}
+                <a class="gym-card" href="{% url 'gym_detail' gym_slug=gym.slug %}">
+                    <h4>{{ gym.name }}</h4>
+                    <p>{{ gym.description }}</p>
+                    <br>
+                    <div class="filters positive">
+                        {% for positive_filter in gym.positive_filter.all %}
+                            <div>
+                                <img src="{% static 'icons/plus.svg' %}" alt="Pluss">
+                                {{ positive_filter }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="filters positive">
+                        {% for negative_filter in gym.negative_filter.all %}
+                            <div>
+                                <img src="{% static 'icons/minus.svg' %}" alt="Pluss">
+                                {{ negative_filter }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

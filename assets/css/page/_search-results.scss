@@ -1,0 +1,28 @@
+#search-results {
+  .results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .gym-card {
+    background-color: $extra-light-gray;
+    box-shadow: $low-shadow;
+    padding: 1rem;
+    border-radius: $main-border-radius;
+
+    .filters {
+      color: $primary-color;
+      margin-bottom: 1rem;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        img {
+          width: 16px;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

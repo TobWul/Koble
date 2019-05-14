@@ -1,23 +1,94 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block body %}
-{#    {% include 'components/nav.html' %}#}
-    <div class="container">
-        {% for gym in gyms %}
-            <div class="gym-card">
-                {{ gym.name }}
-                {{ gym.description }}
-                <div class="filters positive">
-{#                    {% for positive_filter in gym.positive_filter.all %}#}
-{#                        {{ positive_filter }}#}
-{#                    {% endfor %}#}
-                </div>
-                <div class="filters positive">
-{#                    {% for negative_filter in gym.negative_filter.all %}#}
-{#                        {{ negative_filter }}#}
-{#                    {% endfor %}#}
+    {% include 'components/nav.html' %}
+    <div class="container" id="gym-page">
+        <section class="header">
+            <h2>{{ gym.name }}</h2>
+            <div class="images">
+                {% for image in gym.gymimage_set.all %}
+                    <img src="{{ image.image.url }}" alt="{{ gym.name }}">
+                {% endfor %}
+                <div class="dots">
+                    {% for i in gym.gymimage_set.all %}
+                        <div class="dot {% if forloop.first %}selected{% endif %}"></div>
+                    {% endfor %}
+
                 </div>
             </div>
-        {% endfor %}
+        </section>
+        <section class="splitter">
+            <section>
+                <h3>Viktig inforasjon</h3>
+                <div class="filter-card">
+                    <div class="filters positive">
+                        {% for positive_filter in gym.positive_filter.all %}
+                            <div>
+                                <img src="{% static 'icons/plus.svg' %}" alt="Pluss">
+                                {{ positive_filter }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="filters positive">
+                        {% for negative_filter in gym.negative_filter.all %}
+                            <div>
+                                <img src="{% static 'icons/minus.svg' %}" alt="Minus">
+                                {{ negative_filter }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <a href="{% url 'suggestion' %}" class="button">Foreslå forbedringer</a>
+                <h3>Om {{ gym.name }}</h3>
+                <p class="about">{{ gym.about }}</p>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="400" height="300" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=impuls%20sirkus&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+                    <style>.mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 300px;
+                        width: 400px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 300px;
+                        width: 400px;
+                    }</style>
+                </div>
+            </section>
+            <section>
+                <div class="recomendations">
+                    <img src="{% static 'icons/flag.svg' %}" alt="Flagg">
+                    {{ gym.reviews.all.count }} anbefaling{% if gym.reviews.all.count > 1 %}er{% endif %}
+                </div>
+                <b>Detaljer</b>
+                <p>Adresse: {{ gym.address }}</p>
+                <p>Åpningstider: {{ gym.opening_hours }}</p>
+                <p>Kontaktinfo: {{ gym.contact_information }}</p>
+            </section>
+        </section>
+        <hr>
+        <section class="reviews">
+            {% for review in gym.reviews.all %}
+                <div>
+                    <p>{{ review.user.first_name }} {{ review.user.last_name }}<br>
+                        <span>{{ review.date_added|date:'d.m.Y' }}</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <h4>{{ review.title }}</h4>
+                    <p>{{ review.text }}</p>
+                </div>
+            {% endfor %}
+        </section>
+
     </div>
 {% endblock %}

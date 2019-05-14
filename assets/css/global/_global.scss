@@ -18,3 +18,10 @@ img {
   @include no-select;
 }
 
+hr {
+    margin: 4rem auto;
+    width: 80%;
+    border-width: 2px;
+    border-color: $extra-light-gray;
+    border-style: solid;
+  }

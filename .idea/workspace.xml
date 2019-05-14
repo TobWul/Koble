@@ -2,41 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b349ed-c404-4f15-ae4c-3cb4304339e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gym/templates/gym/gym-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gym/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suggestions/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suggestions/templates/suggestions/suggestion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suggestions/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/components/_dots.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/page/_gym-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/page/_search-results.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/blobs/suggestion-blob.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/home/search-results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_global.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_global.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_mixins.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_mixins.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_input.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_input.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_navigation.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/8ad9ba02bfd36b96deeb7d0c8d86b8d3df2e0230/_navigation.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_typography.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_typography.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_variables.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_variables.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/942f253a21e7d845026ce930aa5cd32f2531ffe7/stylesheet.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/942f253a21e7d845026ce930aa5cd32f2531ffe7/stylesheet.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_landing-page.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_landing-page.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/global/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/global/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/global/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/global/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/page/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/page/_landing-page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/page/_suggestions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/templates/authentication/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/templates/authentication/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/fileInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koble/settings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koble/settings/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koble/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koble/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/illustrations/Blob.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons/blobs/login-blob.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filters/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filters/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym/templates/gym/gym-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/gym/templates/gym/gym-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/nav.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,101 +57,61 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suggestions/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/suggestions/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filters/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suggestions/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/components/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suggestions/templates/suggestions/suggestion.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="30" column="105" selection-start-line="30" selection-start-column="105" selection-end-line="30" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/components/_input.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="133" column="50" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/page/_suggestions.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suggestions/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.41208792">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/css/page/_gym-page.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/page/_landing-page.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="667">
+                  <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/stylesheet.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="82" column="62" selection-start-line="82" selection-start-column="62" selection-end-line="82" selection-end-column="62" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -183,62 +137,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/authentication/validators.py" />
-        <option value="$PROJECT_DIR$/authentication/admin.py" />
-        <option value="$PROJECT_DIR$/authentication/forms.py" />
-        <option value="$PROJECT_DIR$/home/urls.py" />
-        <option value="$PROJECT_DIR$/assets/css/components/_links.scss" />
-        <option value="$PROJECT_DIR$/assets/css/components/_blob.scss" />
-        <option value="$PROJECT_DIR$/assets/css/components/_buttons.scss" />
-        <option value="$PROJECT_DIR$/assets/css/page/_login.scss" />
         <option value="$PROJECT_DIR$/authentication/urls.py" />
-        <option value="$PROJECT_DIR$/assets/css/global/_variables.scss" />
-        <option value="$PROJECT_DIR$/assets/css/page/_landing-page.scss" />
         <option value="$PROJECT_DIR$/assets/js/blob.js" />
         <option value="$PROJECT_DIR$/features/models.py" />
         <option value="$PROJECT_DIR$/authentication/views.py" />
-        <option value="$PROJECT_DIR$/assets/css/components/_navigation.scss" />
         <option value="$PROJECT_DIR$/authentication/models.py" />
         <option value="$PROJECT_DIR$/filters/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/authentication/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/filters/admin.py" />
         <option value="$PROJECT_DIR$/koble/settings/prod.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/images/__init__.py" />
         <option value="$PROJECT_DIR$/images/models.py" />
         <option value="$PROJECT_DIR$/home/templates/home/index.html" />
-        <option value="$PROJECT_DIR$/gym/admin.py" />
-        <option value="$PROJECT_DIR$/gym/templates/gym/gym-page.html" />
         <option value="$PROJECT_DIR$/gym/templates/gym/suggestion.html" />
-        <option value="$PROJECT_DIR$/gym/urls.py" />
         <option value="$PROJECT_DIR$/suggestions/urls.py" />
         <option value="$PROJECT_DIR$/gym/forms.py" />
         <option value="$PROJECT_DIR$/koble/settings/settings.py" />
-        <option value="$PROJECT_DIR$/gym/views.py" />
-        <option value="$PROJECT_DIR$/gym/models.py" />
         <option value="$PROJECT_DIR$/reviews/models.py" />
         <option value="$PROJECT_DIR$/koble/urls.py" />
-        <option value="$PROJECT_DIR$/assets/css/stylesheet.scss" />
-        <option value="$PROJECT_DIR$/assets/css/global/_global.scss" />
         <option value="$PROJECT_DIR$/assets/css/global/_mixins.scss" />
-        <option value="$PROJECT_DIR$/assets/css/global/_typography.scss" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/assets/js/fileInput.js" />
         <option value="$PROJECT_DIR$/authentication/templates/authentication/login.html" />
         <option value="$PROJECT_DIR$/suggestions/admin.py" />
-        <option value="$PROJECT_DIR$/templates/components/nav.html" />
         <option value="$PROJECT_DIR$/assets/css/page/_suggestions.scss" />
         <option value="$PROJECT_DIR$/suggestions/forms.py" />
-        <option value="$PROJECT_DIR$/filters/models.py" />
         <option value="$PROJECT_DIR$/assets/css/components/_input.scss" />
         <option value="$PROJECT_DIR$/suggestions/templates/suggestions/suggestion.html" />
         <option value="$PROJECT_DIR$/suggestions/models.py" />
+        <option value="$PROJECT_DIR$/assets/css/components/_navigation.scss" />
+        <option value="$PROJECT_DIR$/assets/icons/blobs/suggestion-blob.svg" />
+        <option value="$PROJECT_DIR$/templates/components/nav.html" />
+        <option value="$PROJECT_DIR$/home/urls.py" />
+        <option value="$PROJECT_DIR$/filters/models.py" />
+        <option value="$PROJECT_DIR$/filters/admin.py" />
+        <option value="$PROJECT_DIR$/assets/css/page/_search-results.scss" />
+        <option value="$PROJECT_DIR$/home/views.py" />
         <option value="$PROJECT_DIR$/suggestions/views.py" />
+        <option value="$PROJECT_DIR$/gym/models.py" />
+        <option value="$PROJECT_DIR$/gym/urls.py" />
+        <option value="$PROJECT_DIR$/home/templates/home/search-results.html" />
+        <option value="$PROJECT_DIR$/gym/views.py" />
+        <option value="$PROJECT_DIR$/reviews/admin.py" />
+        <option value="$PROJECT_DIR$/gym/admin.py" />
+        <option value="$PROJECT_DIR$/assets/css/page/_landing-page.scss" />
+        <option value="$PROJECT_DIR$/assets/css/components/_dots.scss" />
+        <option value="$PROJECT_DIR$/assets/css/stylesheet.scss" />
+        <option value="$PROJECT_DIR$/assets/css/global/_typography.scss" />
+        <option value="$PROJECT_DIR$/assets/css/global/_global.scss" />
+        <option value="$PROJECT_DIR$/assets/css/global/_variables.scss" />
+        <option value="$PROJECT_DIR$/assets/css/page/_gym-page.scss" />
+        <option value="$PROJECT_DIR$/gym/templates/gym/gym-page.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="x" value="-30" />
+    <option name="y" value="117" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -271,7 +226,7 @@
               <item name="Koble" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
@@ -284,25 +239,54 @@
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Koble" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="illustrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Koble" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Koble" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Koble" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Koble" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Koble" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
@@ -312,7 +296,7 @@
             <path>
               <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="suggestions" type="462c0819:PsiDirectoryNode" />
+              <item name="reviews" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,12 +313,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/icons/blobs" />
       <recent name="$PROJECT_DIR$/suggestions/templates/suggestions" />
       <recent name="$PROJECT_DIR$/authentication/templates/authentication" />
       <recent name="$PROJECT_DIR$/koble/settings" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/icons/blobs" />
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
@@ -369,23 +355,23 @@
       <workItem from="1557326318845" duration="11413000" />
       <workItem from="1557432188103" duration="799000" />
       <workItem from="1557487143823" duration="21615000" />
-      <workItem from="1557675921318" duration="17606000" />
+      <workItem from="1557675921318" duration="25729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76597000" />
+    <option name="totallyTimeSpent" value="84720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26800978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32901832" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32879582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -394,7 +380,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36753926" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32901832" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -408,105 +394,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/ajaxSetup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/components/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/global/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/page/_login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1341">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/blob.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentication/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/components/_navigation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/page/_landing-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentication/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gym/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -551,44 +438,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gym/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviews/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gym/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/suggestions/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -636,20 +482,6 @@
           <folding>
             <element signature="e#629#661#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/stylesheet.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -687,24 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authentication/templates/authentication/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/global/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -732,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/components/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/components/_input.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -756,7 +567,7 @@
     <entry file="file://$PROJECT_DIR$/suggestions/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -766,27 +577,214 @@
     <entry file="file://$PROJECT_DIR$/suggestions/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/icons/blobs/suggestion-blob.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/filters/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="253">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/icons/blobs/login-blob.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/components/_navigation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="140" column="18" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/page/_search-results.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templates/home/search-results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/suggestions/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="713">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/components/_dots.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/stylesheet.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/page/_landing-page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/global/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/global/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/page/_gym-page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="82" column="62" selection-start-line="82" selection-start-column="62" selection-end-line="82" selection-end-column="62" />
         </state>
       </provider>
     </entry>
