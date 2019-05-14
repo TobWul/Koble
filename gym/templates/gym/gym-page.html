@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{#    {% include 'components/nav.html' %}#}
+    <div class="container">
+        {% for gym in gyms %}
+            <div class="gym-card">
+                {{ gym.name }}
+                {{ gym.description }}
+                <div class="filters positive">
+{#                    {% for positive_filter in gym.positive_filter.all %}#}
+{#                        {{ positive_filter }}#}
+{#                    {% endfor %}#}
+                </div>
+                <div class="filters positive">
+{#                    {% for negative_filter in gym.negative_filter.all %}#}
+{#                        {{ negative_filter }}#}
+{#                    {% endfor %}#}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

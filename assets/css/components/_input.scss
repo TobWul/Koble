@@ -5,8 +5,12 @@
   &:not(.fluid) {
     max-width: 70ch;
   }
+  textarea {
+    resize: vertical;
+    min-height: 10em;
+  }
 
-  input {
+  input:not([type=checkbox]):not([type="file"]), textarea {
     background: white;
     border: 0;
     border-radius: $main-border-radius / 1.5;
@@ -58,10 +62,98 @@
       }
     }
   }
+
   .errorlist {
     text-align: left;
     margin-top: 4px;
     margin-left: 1rem;
     color: $error;
+  }
+
+  input[type="file"] {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+    + label {
+      color: $primary-color;
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding-left: 3rem;
+      @include no-select;
+
+      & * {
+        pointer-events: none;
+      }
+    }
+    ~ img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: auto;
+      pointer-events: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+    + label {
+      position: relative;
+      padding-left: 2rem;
+      cursor: pointer;
+      @include no-select;
+
+      &:hover::before {
+        border-color: $primary-color;
+      }
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+      }
+
+      &::before {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 2px solid $gray;
+        border-radius: 4px;
+        height: 24px;
+        width: 24px;
+        transition: border-color 200ms ease-in-out;
+      }
+
+      &::after {
+        left: 8px;
+        border: 0 solid white;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        height: 13px;
+        width: 8px;
+        transform: rotate(45deg) scale(0);
+        transition: transform 200ms $bounce-transition;
+      }
+    }
+
+    &:checked {
+      + label::before {
+        border: none;
+        background-color: $primary-color;
+      }
+      + label::after {
+        transform: rotate(45deg) scale(1);
+      }
+    }
   }
 }

@@ -6,7 +6,7 @@ from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
 )
 
-from features.models import Feature
+from filters.models import Filter
 
 
 class ProfileManager(BaseUserManager):
@@ -47,7 +47,7 @@ class Profile(AbstractBaseUser):
     first_name = models.CharField(max_length=150)
     last_name = models.CharField(max_length=150)
 
-    preferences = models.ManyToManyField(Feature)
+    preferences = models.ManyToManyField(Filter)
     user_created = models.DateTimeField(auto_now_add=True, auto_now=False)
 
     is_active = models.BooleanField(default=True)

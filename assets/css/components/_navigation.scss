@@ -43,6 +43,8 @@
 
 nav#nav {
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 4rem;
   left: 50%;
   padding: 0 5%;
@@ -57,6 +59,47 @@ nav#nav {
   @media screen and (max-width: $xl) {
     color: $primary-color;
     font-size: 1.2rem;
+  }
+
+   a#logo {
+    position: relative;
+    color: $accent-color;
+    font-weight: 500;
+    margin-right: auto;
+    padding-left: 28px;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 24px;
+      width: auto;
+    }
+  }
+
+  #nav-search {
+    margin: 0 4rem 0;
+    width: 300px;
+    input {
+      background: none;
+      border-color: white;
+      color: white;
+      box-shadow: 0 0 0 2px white;
+      width: 100%;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1rem;
+      width: 24px;
+      height: auto;
+    }
   }
 
   .nav-items {
@@ -84,12 +127,6 @@ nav#nav {
 
   a {
     margin-right: 3.5rem;
-  }
-
-  a#logo {
-    color: $accent-color;
-    font-weight: 500;
-    margin-right: auto;
   }
 
   a.login {

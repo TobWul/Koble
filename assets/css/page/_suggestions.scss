@@ -1,0 +1,27 @@
+#suggestions {
+  h1, h4 {
+    color: $primary-color;
+  }
+  h1 {
+    margin-bottom: 6rem
+  }
+  h4 {
+    margin-bottom: 1rem;
+    margin-top: 5%;
+    + p {
+      margin-bottom: 1rem;
+      color: $gray;
+      font-style: italic;
+    }
+  }
+
+  .checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+
+    .input-field {
+      margin-bottom: 2rem;
+    }
+  }
+}

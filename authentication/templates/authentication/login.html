@@ -38,12 +38,14 @@
                 <form action="" method="post" class="login-form">
                     {% csrf_token %}
                     <div class="input-field">
-                        <input type="email" id="id_login_email" name="email" placeholder="E-post">
-                        <label for="id_password">E-post</label>
+                        {{ form.email }}
+                        <label for="{{ form.email.id_for_label }}">E-post</label>
+                        {{ form.email.errors }}
                     </div>
                     <div class="input-field">
-                        <input type="password" id="id_login_password" name="password" placeholder="Passord">
-                        <label for="id_login_password">Passord</label>
+                        {{ form.password }}
+                        <label for="{{ form.password.id_for_label }}">Passord</label>
+                        {{ form.password.errors }}
                     </div>
                     <input type="submit" class="button" value="Logg inn">
                 </form>
@@ -220,11 +222,9 @@
                         document.getElementById('blob').style.left = `calc(50% + ${width}px)`;
                     }, 1);
                 },
-                getCSRF: function () {
-                    return document.getElementsByName("csrfmiddlewaretoken")[0].value;
-                },
                 checkEmail: function () {
                     self = this;
+                    // Request to check if user input is valid
                     $.ajax({
                         type: 'POST',
                         url: '{% url "check_email" %}',
@@ -239,6 +239,7 @@
                             if (response === 'True') {
                                 self.selectThings = true;
                                 self.emailError = '';
+                                self.getNameWidth();
                             } else {
                                 self.emailError = response.email;
                                 self.passwordError = response.password;
@@ -251,7 +252,9 @@
                     });
                 },
                 register: function () {
+                    // Saving "this" to access inside ajax functions
                     let self = this;
+                    // Make a request to create a new user.
                     $.ajax({
                         type: 'POST',
                         url: '{% url "register" %}',
@@ -262,6 +265,7 @@
                             'password': self.password
                         },
                         success: function (response) {
+                            // If user profile is created, move to next screen.
                             if (response === 'True') {
                                 self.selectThings = false;
                                 self.endScreen = true;

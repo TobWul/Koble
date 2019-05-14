@@ -1,6 +1,10 @@
 Django==2.2.1
+Pillow
+django-imagekit
 pytz==2019.1
 sqlparse==0.3.0
 gunicorn
+mixer
 django-heroku
 social-auth-app-django
+django-storages

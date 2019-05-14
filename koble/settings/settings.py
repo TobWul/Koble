@@ -39,9 +39,14 @@ INSTALLED_APPS = [
     # Apps
     'home',
     'authentication',
-    'features',
+    'filters',
+    'gym',
+    'reviews',
+    'suggestions',
     # Third party
-    'social_django'
+    'social_django',
+    'imagekit',
+    'storages'
 ]
 
 AUTHENTICATION_BACKENDS = [

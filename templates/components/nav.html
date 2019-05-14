@@ -1,16 +1,31 @@
 {% load static %}
 <nav id="nav">
-    <a href="{% url 'home' %}" id="logo">KOBLE</a>
+    <a href="{% url 'home' %}" id="logo">
+        <svg id="blob" :class="{headerBlob: selectThings}" xmlns:xlink="http://www.w3.org/1999/xlink"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="10 10 180 170">
+            <path id="personalBlob" d="M 82 22
+                C 120 20, 136 30, 145 54
+                S 156 94, 132 115
+                S 83 144, 57 124
+                S 16 81, 34 54
+                S 44 24, 82 22"></path>
+        </svg>
+        KOBLE
+    </a>
+    <div class="input-field" id="nav-search">
+        <input type="text" id="search" name="search" placeholder='Prøv "rullestolbasket"'>
+        <img src="{% static 'icons/search-icon.svg' %}" alt="Search icon">
+    </div>
     <div id="hamburger">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
     <div class="nav-items">
-        <a to="/">Om oss</a>
-        <a to="/">Kontakt oss</a>
-        <a to="/">Blogg</a>
-        <a to="/">Send inn forslag</a>
+        <a href="/">Kontakt oss</a>
+        <a href="/">Blogg</a>
+        <a href="{% url 'suggestion' %}">Send inn forslag</a>
         {% if not request.user.is_authenticated %}
             <a href="{% url 'login' %}" class="login"><img src="{% static 'illustrations/Blob.svg' %}" alt="">Logg
                 inn</a>

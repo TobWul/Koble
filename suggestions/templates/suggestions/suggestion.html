@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+    <div class="container" id="suggestions">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h1>Kjenner du til en god<br>treningsarena?</h1>
+
+            <h4>Navnet på plassen</h4>
+            <p>Det offisielle navnet på plassen</p>
+            <div class="input-field">
+                {{ form.name }}
+                <label for=""></label>
+                {{ form.name.errors }}
+            </div>
+
+            <h4>Vet du adressen?</h4>
+            <p>Om du ikke vet spesifikke adressen holder det å bare skrive området.</p>
+            <div class="input-field">
+                {{ form.address }}
+                <label for=""></label>
+                {{ form.address.errors }}
+            </div>
+
+            <h4>Hvorfor er dette en god treningsarena for rullestolbrukere?</h4>
+            <div class="checkboxes">
+                {% for filter in filters %}
+                    <div class="input-field">
+                        <input type="checkbox" id="{{ filter.pk }}" value="{{ filter.pk }}" name="filter">
+                        <label for="{{ filter.pk }}">{{ filter.name }}</label>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="input-field">
+                {{ form.why_wheelchair_friendly }}
+                <label for=""></label>
+                {{ form.why_wheelchair_friendly.errors }}
+            </div>
+            <div class="input-field">
+                <input type="file" id="image" name="image">
+                <label for="image">Legg til bilde</label>
+                <img src="{% static 'icons/camera_upload.svg' %}" alt="Camera upload">
+            </div>
+            <h4>Noe annet vi burde vite?</h4>
+            <div class="input-field">
+                {{ form.additional_information }}
+                {{ form.additional_information.errors }}
+            </div>
+            <input type="submit" class="button primary" value="Send inn forslag">
+        </form>
+    </div>
+{% endblock %}
