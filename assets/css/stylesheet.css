@@ -89,7 +89,7 @@ html {
   touch-action: manipulation; }
 
 .container {
-  margin: 8% auto;
+  margin: 10rem auto 8%;
   width: 95%; }
   @media screen and (min-width: 48em) {
     .container {
@@ -633,15 +633,23 @@ nav#nav {
         margin-right: 0.5rem; }
 
 #gym-page section.header {
+  position: relative;
   margin-bottom: 4rem; }
   #gym-page section.header h2 {
     margin-bottom: 3rem; }
   #gym-page section.header img {
     width: 100%;
     border-radius: 20px; }
+  #gym-page section.header .dots {
+    bottom: -2rem; }
 #gym-page .splitter {
   display: grid;
   grid-template-columns: 1fr 250px; }
+  @media screen and (max-width: 56.25em) {
+    #gym-page .splitter {
+      grid-template-columns: 1fr; }
+      #gym-page .splitter section:last-child {
+        margin-top: 2rem; } }
   #gym-page .splitter section:first-child h3 {
     margin-bottom: 2rem; }
   #gym-page .splitter section:first-child .filter-card {
@@ -688,10 +696,14 @@ nav#nav {
 #gym-page section.reviews {
   display: grid;
   grid-template-columns: 200px 1fr; }
+  @media screen and (max-width: 48em) {
+    #gym-page section.reviews {
+      grid-template-columns: 1fr; } }
   #gym-page section.reviews div:not(.content) {
     display: flex;
     align-items: center;
-    color: #555555; }
+    color: #555555;
+    margin-bottom: 0.5rem; }
     #gym-page section.reviews div:not(.content) p {
       display: block;
       font-weight: 500;

@@ -1,5 +1,6 @@
 #gym-page {
   section.header {
+    position: relative;
     margin-bottom: 4rem;
 
     h2 {
@@ -10,11 +11,20 @@
       width: 100%;
       border-radius: $main-border-radius;
     }
+    .dots {
+      bottom: -2rem;
+    }
   }
 
   .splitter {
     display: grid;
     grid-template-columns: 1fr 250px;
+    @media screen and (max-width: $lg) {
+      grid-template-columns: 1fr;
+      section:last-child {
+        margin-top: 2rem;
+      }
+    }
 
     section:first-child {
       h3 {
@@ -93,11 +103,15 @@
   section.reviews {
     display: grid;
     grid-template-columns: 200px 1fr;
+    @media screen and (max-width: $md) {
+      grid-template-columns: 1fr;
+    }
 
     div:not(.content) {
       display: flex;
       align-items: center;
       color: $gray;
+      margin-bottom: 0.5rem;
       p {
         display: block;
         font-weight: 500;

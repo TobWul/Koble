@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b349ed-c404-4f15-ae4c-3cb4304339e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/components/_dots.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/page/_gym-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/page/_search-results.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/blobs/suggestion-blob.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/home/search-results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_global.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_global.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_typography.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_typography.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_variables.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/0fcf33b7b7a8c07d3dc996267566c756fa9ebc12/_variables.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/942f253a21e7d845026ce930aa5cd32f2531ffe7/stylesheet.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/942f253a21e7d845026ce930aa5cd32f2531ffe7/stylesheet.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_landing-page.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_landing-page.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_gym-page.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/be62f6c3b3bf2ecefcd7c3a83680406bdfb2521e/_gym-page.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/global/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/global/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/global/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/page/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/page/_landing-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/page/_gym-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/page/_gym-page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/stylesheet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/stylesheet.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/illustrations/Blob.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons/blobs/login-blob.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filters/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filters/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/templates/gym/gym-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/gym/templates/gym/gym-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviews/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/nav.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +40,26 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/page/_gym-page.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+                <state relative-caret-position="322">
+                  <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="322">
+                  <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/components/_dots.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -82,7 +77,7 @@
             <entry file="file://$PROJECT_DIR$/assets/css/stylesheet.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="414">
-                  <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -90,7 +85,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
+                <state relative-caret-position="1012">
                   <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
                 </state>
               </provider>
@@ -99,7 +94,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
               <provider selected="true" editor-type-id="text-editor">
@@ -184,16 +179,15 @@
         <option value="$PROJECT_DIR$/assets/css/components/_dots.scss" />
         <option value="$PROJECT_DIR$/assets/css/stylesheet.scss" />
         <option value="$PROJECT_DIR$/assets/css/global/_typography.scss" />
-        <option value="$PROJECT_DIR$/assets/css/global/_global.scss" />
         <option value="$PROJECT_DIR$/assets/css/global/_variables.scss" />
-        <option value="$PROJECT_DIR$/assets/css/page/_gym-page.scss" />
         <option value="$PROJECT_DIR$/gym/templates/gym/gym-page.html" />
+        <option value="$PROJECT_DIR$/assets/css/global/_global.scss" />
+        <option value="$PROJECT_DIR$/assets/css/page/_gym-page.scss" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-30" />
-    <option name="y" value="117" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -201,108 +195,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="illustrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="gym" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="gym" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="gym" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="gym" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="koble" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koble" type="462c0819:PsiDirectoryNode" />
-              <item name="reviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -355,15 +248,17 @@
       <workItem from="1557326318845" duration="11413000" />
       <workItem from="1557432188103" duration="799000" />
       <workItem from="1557487143823" duration="21615000" />
-      <workItem from="1557675921318" duration="25729000" />
+      <workItem from="1557675921318" duration="25940000" />
+      <workItem from="1557869922822" duration="232000" />
+      <workItem from="1557900821736" duration="426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84720000" />
+    <option name="totallyTimeSpent" value="85589000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.26800978" />
@@ -401,19 +296,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/images/models.py" />
     <entry file="file://$PROJECT_DIR$/authentication/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -438,13 +322,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/forms.py" />
     <entry file="file://$PROJECT_DIR$/gym/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -732,38 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/components/_dots.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/stylesheet.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/page/_landing-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/global/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -774,17 +624,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/page/_gym-page.scss">
+    <entry file="file://$PROJECT_DIR$/assets/css/page/_landing-page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+        <state relative-caret-position="667">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/stylesheet.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gym/templates/gym/gym-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="82" column="62" selection-start-line="82" selection-start-column="62" selection-end-line="82" selection-end-column="62" />
+        <state relative-caret-position="1012">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/components/_dots.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/global/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/page/_gym-page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
