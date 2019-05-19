@@ -431,11 +431,12 @@ nav#nav {
     #landingpage .landing-screen {
       display: none; } }
 #landingpage .landing-text {
-  color: white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 10%; }
+  #landingpage .landing-text h1, #landingpage .landing-text p {
+    color: white; }
   #landingpage .landing-text p, #landingpage .landing-text a {
     font-size: 1.5rem;
     line-height: 1.5em;
@@ -620,7 +621,13 @@ nav#nav {
   background-color: #EFEFEF;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   padding: 1rem;
-  border-radius: 20px; }
+  border-radius: 20px;
+  overflow: hidden; }
+  #search-results .gym-card > img {
+    position: relative;
+    width: calc(100% + 2rem);
+    top: -1rem;
+    left: -1rem; }
   #search-results .gym-card .filters {
     color: #000051;
     margin-bottom: 1rem; }

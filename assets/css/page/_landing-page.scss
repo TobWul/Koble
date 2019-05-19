@@ -9,11 +9,14 @@
   }
 
   .landing-text {
-    color: white;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 10%;
+
+    h1, p {
+      color: white;
+    }
 
     p, a {
       font-size: 1.5rem;

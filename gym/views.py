@@ -8,7 +8,7 @@ def gyms(request):
     context = {
         'gyms': Gym.objects.all
     }
-    return render(request, 'gym/gym-page.html', context)
+    return render(request, 'gym/all-gyms.html', context)
 
 
 def gym_detail(request, gym_slug):

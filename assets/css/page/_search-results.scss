@@ -9,6 +9,14 @@
     box-shadow: $low-shadow;
     padding: 1rem;
     border-radius: $main-border-radius;
+    overflow: hidden;
+
+    > img {
+      position: relative;
+      width: calc(100% + 2rem);
+      top: -1rem;
+      left: -1rem;
+    }
 
     .filters {
       color: $primary-color;
