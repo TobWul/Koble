@@ -2,7 +2,7 @@ Django==2.2.8
 Pillow
 django-imagekit
 pytz==2019.1
-sqlparse==0.3.0
+sqlparse==0.4.4
 gunicorn
 mixer
 django-heroku
